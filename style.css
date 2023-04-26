@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    
+/* Primary */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral */
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+--Very-light-gray : hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Transparent-white);
+    font-size: 15px;
+}
+
+.cards {
+    display: flex;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 19.5rem;
+    padding: 3rem;
+    gap: 2rem;
+    transition: 0.5s ease-in;
+}
+.border-radius-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.border-radius-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.card img {
+    max-width: 4rem;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    opacity: 80%;
+}
+
+.lm-button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem;
+    transition: 0.5s ease;
+
+}
+
+.lm-button:hover {
+    transform: scale(1.1);
+}
+
+/* Card background colors */
+
+.bgcolor1 {
+    background-color: var(--Bright-orange);
+}
+
+.bgcolor2 {
+    background-color: var(--Dark-cyan);
+}
+
+.bgcolor3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+/* Button font colors */
+
+.color1 {
+    color: var(--Bright-orange);
+}
+
+.color2 {
+    color: var(--Dark-cyan);
+}
+
+.color3 {
+    color: var(--Very-dark-cyan);
+}
+
+@media (max-width: 900px) {
+    .body {
+        margin: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 28rem;
+    }
+
+    .border-radius-left {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .border-radius-right {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .lm-button {
+        margin-top: 1rem;
+    }
+}
